@@ -1,0 +1,33 @@
+title: Guoyujun's Blog
+url: http://Guoyujun.com
+description: Computer Science
+email: yujun@51root.net
+
+baidu-analyisis: 0c25350fb76fb20077ef128d06eee385
+highlight_color: '#333344'
+
+social:
+  github: Nana2mini
+  twitter: Nana2mini
+  weibo: iamyujun
+
+name: Yujun Guo
+email: yujun@51root.net
+
+
+highlighter: rouge
+markdown: kramdown
+excerpt_separator: "\n\n"
+
+permalink: /:year/:month/:day/:title/
+timezone: Asia/Shanghai
+
+paginate: 5
+
+safe: false
+lsi: false
+exclude: [.gitignore, CNAME, Dockerfile, README.md]
+plugins: [jekyll-paginate]
+excerpt_separator:  '<!-- more -->'
+
+

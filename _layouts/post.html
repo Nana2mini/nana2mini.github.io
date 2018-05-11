@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<ul class="posts">
+    <li>
+        <div class="post_header">
+            {{ page.title }}
+        </div>
+
+        <div class="post_preheader">
+            <span>
+                {{ page.date | date: "%B %-d, %Y" }} 
+            </span>
+        </div>
+
+        <div id="post">
+            {{ content }}
+        </div>
+        <div class="admire">
+            {% include admire.html %}
+        </div>      
+    </li>
+</ul>
+

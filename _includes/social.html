@@ -1,0 +1,31 @@
+<div id="stalker">
+  <!-- {% if site.social.github %}
+  <a title="Me on weibo" href="https://weibo.com/{{ site.social.weibo }}" target="_Blank">
+    <i class="fa fa-weibo"></i>
+  </a>
+  {% endif %} -->
+  
+
+  {% if site.social.github %}
+  <a title="Me on Github" href="https://github.com/{{ site.social.github }}" target="_Blank">
+    <i class="fa fa-github-square"></i>
+  </a>
+  {% endif %}
+
+
+  {% if site.social.twitter %}
+  <a title="Me on Twitter" href="https://twitter.com/{{ site.social.twitter }}" target="_Blank">
+    <i class="fa fa-twitter-square"></i>
+  </a>
+  {% endif %}
+
+
+  <a title="Atom feed" id="atom" href="/feed.xml" target="_Blank">
+    <i class="fa fa-rss-square"></i>
+  </a>
+
+
+  <a title="Email me" href="mailto:{{ site.email }}">
+    <i class="fa fa-envelope"></i>
+  </a>  
+</div>

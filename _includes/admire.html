@@ -1,0 +1,101 @@
+<html>
+
+<head>
+    <style type="text/css"> 
+    /**打赏**/
+    .sy_shang {
+        clear:both;
+        overflow:hidden;
+    }
+    .shang_box {
+        width:380px;
+        max-width:98%;
+        height:360px;
+        padding:10px;
+        background-color:#fff;
+        border-radius:26px;
+        position:inherit;
+        z-index:1000;
+        display:none;
+    }
+    .dashang {
+        display:block;
+        width:70px;
+        margin:5px auto;
+        line-height:25px;
+        padding-top: 5px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        background-color:#E74851;
+        color:#fff !important;
+        text-align:center;
+        text-decoration:none;
+        border-radius:10px;
+        font-weight:bold;
+        font-size:18px;
+        transition:all 0.3s;
+    }
+    .dashang:hover {
+        opacity:1.2;
+        font-size:26px;
+    }
+    #sl_shang0,#sl_shang1,#sl_shang2 {
+        text-align:center;
+    }
+    #sl_shang0 img,#sl_shang1 img,#sl_shang2 img {
+        max-width:260px;
+    }
+    .sl_shang {
+        overflow:hidden;
+    }
+    .sl_shang b {
+        font-size:18px;
+    }
+    .sl_shang ul {
+        margin-top:10px;
+        clear:both;
+        overflow:hidden;
+    }
+    .sl_shang li {
+        float:left;
+    }
+    </style>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <center>
+        <div class="sy_shang">
+            <a href="javascript:void(0);" onclick="dashangToggle()" class="dashang" >赞 赏</a>
+            <div class="shang_box">
+                <div id="sl_shang" onsubmit="return postcheck()">                  
+                    <div id="sl_shang0">
+                        <img src="/assets/img/admire.png">                   
+                    </div>
+                </div>
+            </div>
+        </center>        
+    </center>
+
+    <script type="text/javascript">
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+    }
+    function changeItem(i) {
+        var k = 3;
+        for (var j = 0; j < k; j++) {
+            if (j == i) {
+                document.getElementById("sl_shang" + j).style.display = "block";
+            } else {
+                document.getElementById("sl_shang" + j).style.display = "none";
+            }
+        }
+    }
+    function opay() {
+        document.getElementById("sl_shang").target = "_parent";
+    }
+    </script>
+</body>
+
+</html>
